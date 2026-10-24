@@ -55,10 +55,10 @@
   .lead { color: var(--muted); font-size: 18px; max-width: 620px; }
   .author { margin-top: 28px; display: flex; align-items: center; gap: 14px; }
   .avatar {
-    width: 48px; height: 48px; border-radius: 50%;
-    background: var(--accent); color: #fff;
-    display: grid; place-items: center;
-    font-weight: 600;
+    width: 72px; height: 72px; border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    background: var(--accent-soft);
   }
   .author strong { display: block; }
   .author span { color: var(--muted); font-size: 14px; }
@@ -134,7 +134,7 @@
     <h1>Matemáticas para la IA y la Ingeniería de Sistemas</h1>
     <p class="lead">Cálculo, álgebra lineal, probabilidad y matemáticas discretas explicados con la mirada puesta en la inteligencia artificial, con ejemplos de código, visualizaciones interactivas y una ruta de aprendizaje de 24 semanas.</p>
     <div class="author">
-      <div class="avatar">JR</div>
+      <img class="avatar" src="foto_perfil.jpg" alt="Foto de Juan Manuel Rudas Tijera">
       <div>
         <strong>Juan Manuel Rudas Tijera</strong>
         <span>Cartagena de Indias, Colombia</span>
