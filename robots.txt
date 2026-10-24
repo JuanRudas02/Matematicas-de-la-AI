@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juanrudas02.github.io/Matematicas-de-la-AI/sitemap.xml
