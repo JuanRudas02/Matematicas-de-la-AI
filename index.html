@@ -85,6 +85,39 @@
   .part b { color: var(--accent); font-family: Fraunces, Georgia, serif; font-size: 20px; min-width: 32px; }
   .part h3 { margin: 0 0 4px; font-size: 16px; }
   .part p { margin: 0; color: var(--muted); font-size: 14px; }
+  .intro { color: var(--muted); margin: -4px 0 20px; }
+  .concept {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 22px 8px;
+    margin-bottom: 18px;
+  }
+  .concept h3 { margin: 0 0 8px; font-size: 20px; font-family: Fraunces, Georgia, serif; }
+  .concept h4 { margin: 20px 0 6px; font-size: 15px; }
+  .formula {
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    font-family: "Cambria Math", "STIX Two Math", Georgia, serif;
+    font-size: 19px;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; }
+  .frac > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 4px; }
+  .frac > span:last-child { padding: 0 4px; }
+  .steps { margin: 6px 0 14px; padding-left: 22px; }
+  .steps li { margin: 6px 0; }
+  .math { font-family: "Cambria Math", "STIX Two Math", Georgia, serif; font-size: 17px; white-space: nowrap; }
+  .ia {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 14px;
+    margin: 14px 0 16px;
+    color: var(--muted);
+    font-size: 15px;
+  }
   footer {
     margin-top: 64px;
     padding: 28px 0 48px;
@@ -111,6 +144,71 @@
   </header>
 
   <main>
+    <h2>Antes de empezar: derivadas e integrales</h2>
+    <p class="intro">Si nunca has visto cálculo, estas dos ideas son la base de todo el libro. Aquí van explicadas desde cero, con un ejemplo resuelto paso a paso.</p>
+
+    <section class="concept">
+      <h3>¿Qué es una derivada?</h3>
+      <p>La derivada mide <strong>qué tan rápido cambia algo</strong>. Si <span class="math">f(x)</span> es la posición de un carro, su derivada es la velocidad. Gráficamente, es la <strong>pendiente</strong> (inclinación) de la curva en un punto.</p>
+
+      <h4>Definición</h4>
+      <div class="formula">
+        f′(x) = lim<sub>h→0</sub>
+        <span class="frac"><span>f(x + h) − f(x)</span><span>h</span></span>
+      </div>
+      <p>En palabras: avanzamos un pasito <span class="math">h</span>, medimos cuánto cambió la función y dividimos entre el pasito. Luego hacemos el pasito tan pequeño como queramos (<span class="math">h → 0</span>).</p>
+
+      <h4>Ejemplo: derivada de f(x) = x² usando la definición</h4>
+      <ol class="steps">
+        <li>Calculamos <span class="math">f(x + h) = (x + h)² = x² + 2xh + h²</span></li>
+        <li>Restamos: <span class="math">f(x + h) − f(x) = 2xh + h²</span></li>
+        <li>Dividimos entre <span class="math">h</span>: <span class="math">2x + h</span></li>
+        <li>Hacemos <span class="math">h → 0</span>: <span class="math"><strong>f′(x) = 2x</strong></span></li>
+      </ol>
+
+      <h4>El atajo: regla de la potencia</h4>
+      <div class="formula">si f(x) = xⁿ &nbsp;⟹&nbsp; f′(x) = n · xⁿ⁻¹</div>
+      <p>Se "baja" el exponente a multiplicar y se le resta 1. Por ejemplo:</p>
+      <ol class="steps">
+        <li><span class="math">f(x) = 3x² + 5x</span></li>
+        <li><span class="math">f′(x) = 3·2x + 5·1 = <strong>6x + 5</strong></span></li>
+        <li>En <span class="math">x = 2</span> la pendiente es <span class="math">6·2 + 5 = 17</span></li>
+      </ol>
+
+      <p class="ia"><strong>¿Y la IA?</strong> Una red neuronal aprende calculando derivadas del error: le dicen en qué dirección mover cada parámetro para equivocarse menos. Eso es el <em>descenso de gradiente</em> (Parte I).</p>
+    </section>
+
+    <section class="concept">
+      <h3>¿Qué es una integral?</h3>
+      <p>La integral es la <strong>operación inversa de la derivada</strong>. También sirve para calcular <strong>el área bajo una curva</strong>, o sea, para "sumar" infinitos pedacitos muy pequeños.</p>
+
+      <h4>Integral indefinida (la antiderivada)</h4>
+      <div class="formula">
+        ∫ xⁿ dx = <span class="frac"><span>xⁿ⁺¹</span><span>n + 1</span></span> + C &nbsp;&nbsp;(n ≠ −1)
+      </div>
+      <p>Se le suma 1 al exponente y se divide entre el nuevo exponente. La <span class="math">C</span> es una constante, porque al derivar cualquier número da 0.</p>
+      <ol class="steps">
+        <li><span class="math">∫ (6x + 5) dx = 6·<span class="frac"><span>x²</span><span>2</span></span> + 5x + C = <strong>3x² + 5x + C</strong></span></li>
+        <li>Comprobación: si derivamos <span class="math">3x² + 5x</span> volvemos a <span class="math">6x + 5</span> ✔</li>
+      </ol>
+
+      <h4>Integral definida (el área)</h4>
+      <div class="formula">
+        ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)
+      </div>
+      <p>donde <span class="math">F</span> es la antiderivada de <span class="math">f</span>. Esto es el <em>Teorema Fundamental del Cálculo</em>.</p>
+
+      <h4>Ejemplo: área bajo x² entre 0 y 2</h4>
+      <ol class="steps">
+        <li>Antiderivada: <span class="math">F(x) = <span class="frac"><span>x³</span><span>3</span></span></span></li>
+        <li>Evaluamos arriba: <span class="math">F(2) = <span class="frac"><span>8</span><span>3</span></span></span></li>
+        <li>Evaluamos abajo: <span class="math">F(0) = 0</span></li>
+        <li>Restamos: <span class="math"><strong>∫<sub>0</sub><sup>2</sup> x² dx = <span class="frac"><span>8</span><span>3</span></span> ≈ 2.67</strong></span> unidades de área</li>
+      </ol>
+
+      <p class="ia"><strong>¿Y la IA?</strong> En probabilidad, el área bajo una curva de densidad es una probabilidad. Las integrales están detrás de los modelos probabilísticos y de la estadística (Parte III).</p>
+    </section>
+
     <h2>Contenido</h2>
     <div class="parts">
       <div class="part"><b>I</b><div><h3>Cálculo diferencial y optimización</h3><p>El motor del aprendizaje: derivadas, gradientes y descenso de gradiente.</p></div></div>
