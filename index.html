@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matemáticas para la IA — Juan Manuel Rudas Tijera</title>
+<meta name="description" content="Libro de Matemáticas para la Inteligencia Artificial y la Ingeniería de Sistemas, por Juan Manuel Rudas Tijera (Cartagena, Colombia).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbf8f3;
+    --surface: #ffffff;
+    --text: #1d1b18;
+    --muted: #5f5a52;
+    --border: #e7e0d4;
+    --accent: #c2410c;
+    --accent-soft: #fdeee4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15130f;
+      --surface: #1e1b17;
+      --text: #f2ede4;
+      --muted: #a8a094;
+      --border: #332e27;
+      --accent: #fb923c;
+      --accent-soft: #2c1e14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 40px; }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-size: clamp(32px, 6vw, 52px);
+    line-height: 1.1;
+    margin: 18px 0 16px;
+  }
+  .lead { color: var(--muted); font-size: 18px; max-width: 620px; }
+  .author { margin-top: 28px; display: flex; align-items: center; gap: 14px; }
+  .avatar {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    display: grid; place-items: center;
+    font-weight: 600;
+  }
+  .author strong { display: block; }
+  .author span { color: var(--muted); font-size: 14px; }
+  .btn {
+    display: inline-block;
+    margin-top: 32px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 10px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  h2 { font-family: Fraunces, Georgia, serif; font-size: 26px; margin: 48px 0 16px; }
+  .parts { display: grid; gap: 12px; }
+  .part {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex; gap: 16px;
+  }
+  .part b { color: var(--accent); font-family: Fraunces, Georgia, serif; font-size: 20px; min-width: 32px; }
+  .part h3 { margin: 0 0 4px; font-size: 16px; }
+  .part p { margin: 0; color: var(--muted); font-size: 14px; }
+  footer {
+    margin-top: 64px;
+    padding: 28px 0 48px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">Libro abierto · Español</span>
+    <h1>Matemáticas para la IA y la Ingeniería de Sistemas</h1>
+    <p class="lead">Cálculo, álgebra lineal, probabilidad y matemáticas discretas explicados con la mirada puesta en la inteligencia artificial, con ejemplos de código, visualizaciones interactivas y una ruta de aprendizaje de 24 semanas.</p>
+    <div class="author">
+      <div class="avatar">JR</div>
+      <div>
+        <strong>Juan Manuel Rudas Tijera</strong>
+        <span>Cartagena de Indias, Colombia</span>
+      </div>
+    </div>
+    <a class="btn" href="Libro_Matematicas_IA_Ingenieria_Sistemas.html">Leer el libro →</a>
+  </header>
+
+  <main>
+    <h2>Contenido</h2>
+    <div class="parts">
+      <div class="part"><b>I</b><div><h3>Cálculo diferencial y optimización</h3><p>El motor del aprendizaje: derivadas, gradientes y descenso de gradiente.</p></div></div>
+      <div class="part"><b>II</b><div><h3>Álgebra lineal y estructuras espaciales</h3><p>El escenario de los datos: vectores, matrices y transformaciones.</p></div></div>
+      <div class="part"><b>III</b><div><h3>Probabilidad y estadística</h3><p>La gestión de la incertidumbre en los modelos.</p></div></div>
+      <div class="part"><b>IV</b><div><h3>Matemáticas discretas, grafos y heurística</h3><p>Lógica y estructuras para la búsqueda y el razonamiento.</p></div></div>
+      <div class="part"><b>V</b><div><h3>Puente hacia la Ingeniería de Sistemas</h3><p>Arquitecturas, infraestructura y conceptos para llevar la IA a producción.</p></div></div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Juan Manuel Rudas Tijera · Cartagena, Colombia ·
+    <a href="https://github.com/JuanRudas02/Matematicas-de-la-AI" style="color:inherit">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
