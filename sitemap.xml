@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/"/>
     <lastmod>2026-10-24</lastmod>
-    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/"/>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/"/>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/Libro_Matematicas_IA_Ingenieria_Sistemas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/Libro_Matematicas_IA_Ingenieria_Sistemas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/Mathematics_for_AI_and_Systems_Engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/Matematica_para_IA_e_Engenharia_de_Sistemas.html"/>
     <lastmod>2026-10-24</lastmod>
-    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/en/Mathematics_for_AI_and_Systems_Engineering.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/Libro_Matematicas_IA_Ingenieria_Sistemas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/Mathematics_for_AI_and_Systems_Engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/Matematica_para_IA_e_Engenharia_de_Sistemas.html"/>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://juanrudas02.github.io/Matematicas-de-la-AI/pt/Matematica_para_IA_e_Engenharia_de_Sistemas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/Libro_Matematicas_IA_Ingenieria_Sistemas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/Mathematics_for_AI_and_Systems_Engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/Matematica_para_IA_e_Engenharia_de_Sistemas.html"/>
+    <lastmod>2026-10-24</lastmod>
   </url>
 </urlset>

@@ -9,6 +9,10 @@
 <meta name="author" content="Juan Manuel Rudas Tijera">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://juanrudas02.github.io/Matematicas-de-la-AI/">
+<link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/">
+<link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/">
+<link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/">
+<link rel="alternate" hreflang="x-default" href="https://juanrudas02.github.io/Matematicas-de-la-AI/">
 <meta name="theme-color" content="#c2410c">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='48' font-size='44' text-anchor='middle' fill='white' font-family='Georgia,serif' font-style='italic'%3E%E2%88%AB%3C/text%3E%3C/svg%3E">
 
@@ -78,7 +82,18 @@
     font: 16px/1.6 Inter, system-ui, sans-serif;
   }
   .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
-  header { padding: 72px 0 40px; }
+  header { padding: 24px 0 40px; }
+  .langs { display: flex; justify-content: flex-end; gap: 4px; margin-bottom: 40px; }
+  .langs a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  .langs a[aria-current] { background: var(--accent); border-color: var(--accent); color: #fff; }
   .tag {
     display: inline-block;
     background: var(--accent-soft);
@@ -172,6 +187,11 @@
 <body>
 <div class="wrap">
   <header>
+    <nav class="langs" aria-label="Idioma">
+      <a href="./" hreflang="es" aria-current="page">Español</a>
+      <a href="en/" hreflang="en">English</a>
+      <a href="pt/" hreflang="pt">Português</a>
+    </nav>
     <span class="tag">Libro abierto · Español</span>
     <h1>Matemáticas para la IA y la Ingeniería de Sistemas</h1>
     <p class="lead">Libro gratuito de matemáticas para inteligencia artificial y machine learning: cálculo, álgebra lineal, probabilidad y matemáticas discretas explicados desde cero, con ejemplos de código, visualizaciones interactivas y una ruta de aprendizaje de 24 semanas.</p>

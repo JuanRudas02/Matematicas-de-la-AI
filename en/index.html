@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathematics for Artificial Intelligence and Machine Learning | Free Book</title>
+<meta name="description" content="Free book on mathematics for artificial intelligence: calculus, derivatives, integrals, linear algebra, probability, statistics and graphs applied to machine learning and systems engineering. By Juan Manuel Rudas Tijera.">
+<meta name="keywords" content="mathematics for artificial intelligence, math for machine learning, math for AI, calculus for AI, derivatives, integrals, gradient descent, linear algebra for machine learning, vectors and matrices, probability and statistics for AI, discrete mathematics, graph theory, heuristics, neural networks, linear regression, systems engineering, free math book, Juan Manuel Rudas Tijera, Cartagena Colombia">
+<meta name="author" content="Juan Manuel Rudas Tijera">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/">
+<link rel="alternate" hreflang="es" href="https://juanrudas02.github.io/Matematicas-de-la-AI/">
+<link rel="alternate" hreflang="en" href="https://juanrudas02.github.io/Matematicas-de-la-AI/en/">
+<link rel="alternate" hreflang="pt" href="https://juanrudas02.github.io/Matematicas-de-la-AI/pt/">
+<link rel="alternate" hreflang="x-default" href="https://juanrudas02.github.io/Matematicas-de-la-AI/">
+<meta name="theme-color" content="#c2410c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='48' font-size='44' text-anchor='middle' fill='white' font-family='Georgia,serif' font-style='italic'%3E%E2%88%AB%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="book">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Mathematics for AI">
+<meta property="og:title" content="Mathematics for Artificial Intelligence and Systems Engineering">
+<meta property="og:description" content="Calculus, linear algebra, probability and graphs explained for machine learning, with code examples and a 24-week learning path. Free book.">
+<meta property="og:url" content="https://juanrudas02.github.io/Matematicas-de-la-AI/en/">
+<meta property="og:image" content="https://juanrudas02.github.io/Matematicas-de-la-AI/foto_perfil.jpg">
+<meta property="book:author" content="Juan Manuel Rudas Tijera">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mathematics for Artificial Intelligence — Free Book">
+<meta name="twitter:description" content="Calculus, linear algebra, probability and graphs applied to machine learning and systems engineering.">
+<meta name="twitter:image" content="https://juanrudas02.github.io/Matematicas-de-la-AI/foto_perfil.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Mathematics for AI and Systems Engineering",
+  "url": "https://juanrudas02.github.io/Matematicas-de-la-AI/en/",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "bookFormat": "https://schema.org/EBook",
+  "datePublished": "2026",
+  "description": "Book on mathematics for artificial intelligence and machine learning: differential calculus, optimization, linear algebra, probability, statistics, discrete mathematics, graphs and systems engineering.",
+  "keywords": "mathematics for artificial intelligence, machine learning, calculus, derivatives, integrals, gradient descent, linear algebra, probability, statistics, graphs, systems engineering",
+  "about": ["Artificial intelligence", "Machine learning", "Differential calculus", "Linear algebra", "Probability and statistics", "Discrete mathematics", "Systems engineering"],
+  "author": {
+    "@type": "Person",
+    "name": "Juan Manuel Rudas Tijera",
+    "image": "https://juanrudas02.github.io/Matematicas-de-la-AI/foto_perfil.jpg",
+    "homeLocation": { "@type": "Place", "name": "Cartagena de Indias, Colombia" },
+    "sameAs": ["https://github.com/JuanRudas02"]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbf8f3;
+    --surface: #ffffff;
+    --text: #1d1b18;
+    --muted: #5f5a52;
+    --border: #e7e0d4;
+    --accent: #c2410c;
+    --accent-soft: #fdeee4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15130f;
+      --surface: #1e1b17;
+      --text: #f2ede4;
+      --muted: #a8a094;
+      --border: #332e27;
+      --accent: #fb923c;
+      --accent-soft: #2c1e14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 24px 0 40px; }
+  .langs { display: flex; justify-content: flex-end; gap: 4px; margin-bottom: 40px; }
+  .langs a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  .langs a[aria-current] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-size: clamp(32px, 6vw, 52px);
+    line-height: 1.1;
+    margin: 18px 0 16px;
+  }
+  .lead { color: var(--muted); font-size: 18px; max-width: 620px; }
+  .author { margin-top: 28px; display: flex; align-items: center; gap: 14px; }
+  .avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    background: var(--accent-soft);
+  }
+  .author strong { display: block; }
+  .author span { color: var(--muted); font-size: 14px; }
+  .btn {
+    display: inline-block;
+    margin-top: 32px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 10px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  h2 { font-family: Fraunces, Georgia, serif; font-size: 26px; margin: 48px 0 16px; }
+  .parts { display: grid; gap: 12px; }
+  .part {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex; gap: 16px;
+  }
+  .part b { color: var(--accent); font-family: Fraunces, Georgia, serif; font-size: 20px; min-width: 32px; }
+  .part h3 { margin: 0 0 4px; font-size: 16px; }
+  .part p { margin: 0; color: var(--muted); font-size: 14px; }
+  .intro { color: var(--muted); margin: -4px 0 20px; }
+  .concept {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 22px 8px;
+    margin-bottom: 18px;
+  }
+  .concept h3 { margin: 0 0 8px; font-size: 20px; font-family: Fraunces, Georgia, serif; }
+  .concept h4 { margin: 20px 0 6px; font-size: 15px; }
+  .formula {
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    font-family: "Cambria Math", "STIX Two Math", Georgia, serif;
+    font-size: 19px;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; }
+  .frac > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 4px; }
+  .frac > span:last-child { padding: 0 4px; }
+  .steps { margin: 6px 0 14px; padding-left: 22px; }
+  .steps li { margin: 6px 0; }
+  .math { font-family: "Cambria Math", "STIX Two Math", Georgia, serif; font-size: 17px; white-space: nowrap; }
+  .ia {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 14px;
+    margin: 14px 0 16px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  footer {
+    margin-top: 64px;
+    padding: 28px 0 48px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="langs" aria-label="Language">
+      <a href="../" hreflang="es">Español</a>
+      <a href="./" hreflang="en" aria-current="page">English</a>
+      <a href="../pt/" hreflang="pt">Português</a>
+    </nav>
+    <span class="tag">Open book · English</span>
+    <h1>Mathematics for AI and Systems Engineering</h1>
+    <p class="lead">A free book on mathematics for artificial intelligence and machine learning: calculus, linear algebra, probability and discrete math explained from scratch, with code examples, interactive visualizations and a 24-week learning path.</p>
+    <div class="author">
+      <img class="avatar" src="../foto_perfil.jpg" alt="Photo of Juan Manuel Rudas Tijera">
+      <div>
+        <strong>Juan Manuel Rudas Tijera</strong>
+        <span>Cartagena de Indias, Colombia</span>
+      </div>
+    </div>
+    <a class="btn" href="Mathematics_for_AI_and_Systems_Engineering.html">Read the book →</a>
+  </header>
+
+  <main>
+    <h2>Before you start: derivatives and integrals</h2>
+    <p class="intro">If you have never seen calculus, these two ideas are the foundation of the whole book. Here they are explained from scratch, with a worked example step by step.</p>
+
+    <section class="concept">
+      <h3>What is a derivative?</h3>
+      <p>The derivative measures <strong>how fast something changes</strong>. If <span class="math">f(x)</span> is the position of a car, its derivative is the speed. Graphically, it is the <strong>slope</strong> of the curve at a point.</p>
+
+      <h4>Definition</h4>
+      <div class="formula">
+        f′(x) = lim<sub>h→0</sub>
+        <span class="frac"><span>f(x + h) − f(x)</span><span>h</span></span>
+      </div>
+      <p>In words: we take a tiny step <span class="math">h</span>, measure how much the function changed and divide by the step. Then we make the step as small as we want (<span class="math">h → 0</span>).</p>
+
+      <h4>Example: derivative of f(x) = x² using the definition</h4>
+      <ol class="steps">
+        <li>We compute <span class="math">f(x + h) = (x + h)² = x² + 2xh + h²</span></li>
+        <li>Subtract: <span class="math">f(x + h) − f(x) = 2xh + h²</span></li>
+        <li>Divide by <span class="math">h</span>: <span class="math">2x + h</span></li>
+        <li>Let <span class="math">h → 0</span>: <span class="math"><strong>f′(x) = 2x</strong></span></li>
+      </ol>
+
+      <h4>The shortcut: the power rule</h4>
+      <div class="formula">if f(x) = xⁿ &nbsp;⟹&nbsp; f′(x) = n · xⁿ⁻¹</div>
+      <p>"Bring down" the exponent to multiply and subtract 1 from it. For example:</p>
+      <ol class="steps">
+        <li><span class="math">f(x) = 3x² + 5x</span></li>
+        <li><span class="math">f′(x) = 3·2x + 5·1 = <strong>6x + 5</strong></span></li>
+        <li>At <span class="math">x = 2</span> the slope is <span class="math">6·2 + 5 = 17</span></li>
+      </ol>
+
+      <p class="ia"><strong>And AI?</strong> A neural network learns by computing derivatives of the error: they tell it in which direction to move each parameter to make fewer mistakes. That is <em>gradient descent</em> (Part I).</p>
+    </section>
+
+    <section class="concept">
+      <h3>What is an integral?</h3>
+      <p>The integral is the <strong>inverse operation of the derivative</strong>. It also computes <strong>the area under a curve</strong>, that is, it "adds up" infinitely many tiny pieces.</p>
+
+      <h4>Indefinite integral (the antiderivative)</h4>
+      <div class="formula">
+        ∫ xⁿ dx = <span class="frac"><span>xⁿ⁺¹</span><span>n + 1</span></span> + C &nbsp;&nbsp;(n ≠ −1)
+      </div>
+      <p>Add 1 to the exponent and divide by the new exponent. <span class="math">C</span> is a constant, because the derivative of any number is 0.</p>
+      <ol class="steps">
+        <li><span class="math">∫ (6x + 5) dx = 6·<span class="frac"><span>x²</span><span>2</span></span> + 5x + C = <strong>3x² + 5x + C</strong></span></li>
+        <li>Check: if we differentiate <span class="math">3x² + 5x</span> we get back <span class="math">6x + 5</span> ✔</li>
+      </ol>
+
+      <h4>Definite integral (the area)</h4>
+      <div class="formula">
+        ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)
+      </div>
+      <p>where <span class="math">F</span> is the antiderivative of <span class="math">f</span>. This is the <em>Fundamental Theorem of Calculus</em>.</p>
+
+      <h4>Example: area under x² between 0 and 2</h4>
+      <ol class="steps">
+        <li>Antiderivative: <span class="math">F(x) = <span class="frac"><span>x³</span><span>3</span></span></span></li>
+        <li>Evaluate at the top: <span class="math">F(2) = <span class="frac"><span>8</span><span>3</span></span></span></li>
+        <li>Evaluate at the bottom: <span class="math">F(0) = 0</span></li>
+        <li>Subtract: <span class="math"><strong>∫<sub>0</sub><sup>2</sup> x² dx = <span class="frac"><span>8</span><span>3</span></span> ≈ 2.67</strong></span> square units</li>
+      </ol>
+
+      <p class="ia"><strong>And AI?</strong> In probability, the area under a density curve is a probability. Integrals are behind probabilistic models and statistics (Part III).</p>
+    </section>
+
+    <h2>Contents</h2>
+    <div class="parts">
+      <div class="part"><b>I</b><div><h3>Differential calculus and optimization</h3><p>The engine of learning: derivatives, gradients and gradient descent.</p></div></div>
+      <div class="part"><b>II</b><div><h3>Linear algebra and spatial structures</h3><p>The stage for data: vectors, matrices and transformations.</p></div></div>
+      <div class="part"><b>III</b><div><h3>Probability and statistics</h3><p>Managing uncertainty in models.</p></div></div>
+      <div class="part"><b>IV</b><div><h3>Discrete mathematics, graphs and heuristics</h3><p>Logic and structures for search and reasoning.</p></div></div>
+      <div class="part"><b>V</b><div><h3>Bridge to Systems Engineering</h3><p>Architectures, infrastructure and concepts to take AI to production.</p></div></div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Juan Manuel Rudas Tijera · Cartagena, Colombia ·
+    <a href="https://github.com/JuanRudas02/Matematicas-de-la-AI" style="color:inherit">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

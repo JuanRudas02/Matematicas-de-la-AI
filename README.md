@@ -1,8 +1,10 @@
 # Matemáticas para la IA y la Ingeniería de Sistemas
 
-Libro de **Juan Manuel Rudas Tijera** (Cartagena, Colombia).
+Libro de **Juan Manuel Rudas Tijera** (Cartagena, Colombia), disponible en tres idiomas:
 
-📖 Léelo en línea: https://juanrudas02.github.io/Matematicas-de-la-AI/
+- 🇪🇸 Español: https://juanrudas02.github.io/Matematicas-de-la-AI/
+- 🇬🇧 English: https://juanrudas02.github.io/Matematicas-de-la-AI/en/
+- 🇧🇷 Português: https://juanrudas02.github.io/Matematicas-de-la-AI/pt/
 
 ## Contenido
 
